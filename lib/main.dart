@@ -3,7 +3,6 @@ import 'package:android_app/screen/btandroid2_screen.dart';
 import 'package:flutter/material.dart';
 
 
-
 void main() {
   runApp(MyApp());
 }

@@ -8,11 +8,14 @@ class CommentWidget extends StatefulWidget {
 class _CommentWidgetState extends State<CommentWidget> {
   TextEditingController _commentController = TextEditingController();
   String imageName = "assets/image/R.png"; // Tên hình ảnh
-
+  // SingleChildScrollView
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
+      appBar: AppBar(
+        title: Text('BT_Android 1'),
+      ),
+      body: Center(
         child: Column(
           children: [
             Image.asset(
