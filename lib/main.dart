@@ -1,6 +1,9 @@
 import 'package:android_app/screen/btandroid1_screen.dart';
 import 'package:android_app/screen/btandroid2_screen.dart';
+import 'package:android_app/screen/btandroid3_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 
 void main() {
@@ -11,6 +14,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'Localizations Sample App',
+      localizationsDelegates: [
+        AppLocalizations.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: [
+        Locale('en'), // English
+        Locale('vi'), // VietNamese
+      ],
       home: HomeScreen(),
     );
   }
@@ -50,7 +64,7 @@ class HomeScreen extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => Screen3()),
+                  MaterialPageRoute(builder: (context) =>  BT_Android3()),
                 );
               },
               child: Text('Bài Tập Android 3'),
