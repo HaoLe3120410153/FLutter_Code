@@ -1,20 +1,5 @@
 import 'package:flutter/material.dart';
 
-void main(){
-
-  runApp(AllMenu());
-}
-
-class AllMenu extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: MenuWidget(),
-      debugShowCheckedModeBanner: false,
-    );
-  }
-}
-
 class MenuWidget extends StatefulWidget {
   @override
   _MenuWidgetState createState() => _MenuWidgetState();

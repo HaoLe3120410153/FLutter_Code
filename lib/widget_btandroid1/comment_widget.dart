@@ -1,21 +1,17 @@
 import 'package:flutter/material.dart';
 
-class CommentWidget extends StatefulWidget {
+class CommentWidgetLayout extends StatefulWidget {
   @override
-  _CommentWidgetState createState() => _CommentWidgetState();
+  _CommentWidgetLayoutState createState() => _CommentWidgetLayoutState();
 }
 
-class _CommentWidgetState extends State<CommentWidget> {
+class _CommentWidgetLayoutState extends State<CommentWidgetLayout> {
   TextEditingController _commentController = TextEditingController();
   String imageName = "assets/image/R.png"; // Tên hình ảnh
   // SingleChildScrollView
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('BT_Android 1'),
-      ),
-      body: Center(
+    return Center(
         child: Column(
           children: [
             Image.asset(
@@ -44,7 +40,6 @@ class _CommentWidgetState extends State<CommentWidget> {
             ),
           ],
         ),
-      ),
-    );
+      );
   }
 }

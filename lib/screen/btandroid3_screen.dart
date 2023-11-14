@@ -1,8 +1,7 @@
-import 'package:android_app/screen/maincalculator.dart';
-import 'package:android_app/widget_layer2/calculator.dart';
-import 'package:android_app/widget_layer2/change_color.dart';
-import 'package:android_app/widget_layer2/click_bold_color.dart';
-import 'package:android_app/widget_layer2/menuwidget.dart';
+import 'package:android_app/screen_btandroid3/calculator_screen.dart';
+import 'package:android_app/screen_btandroid3/menu_screen.dart';
+import 'package:android_app/screen_btandroid3/change_color_screen.dart';
+import 'package:android_app/screen_btandroid3/notbold_color_screen.dart';
 import 'package:flutter/material.dart';
 
 class BT_Android3 extends StatelessWidget {

@@ -1,19 +1,5 @@
 import 'package:flutter/material.dart';
-void main() {
-  runApp(ShowTime());
-}
 
-class ShowTime extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-          title: Text('Current Time App'),
-        ),
-        body: TimeDisplay(),
-      );
-  }
-}
 
 class TimeDisplay extends StatelessWidget {
   @override

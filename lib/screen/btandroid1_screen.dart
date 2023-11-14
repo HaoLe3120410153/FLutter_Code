@@ -1,4 +1,4 @@
-import 'package:android_app/widget_layer2/comment_widget.dart';
+import 'package:android_app/screen_btandroid1/comment_screen.dart';
 import 'package:flutter/material.dart';
 
 class BT_Android1 extends StatelessWidget {
