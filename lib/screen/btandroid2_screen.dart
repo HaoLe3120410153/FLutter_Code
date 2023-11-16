@@ -1,9 +1,9 @@
+import 'package:android_app/screen_btandroid2/internationalization_screen.dart';
 import 'package:flutter/material.dart';
- import 'package:android_app/screen_btandroid2/time_screen.dart';
-// import 'package:android_app/screen_btandroid2/internationalization_widget.dart';
-// import 'package:android_app/screen_btandroid2/phone_input.dart';
-// import 'package:android_app/screen_btandroid2/showcomment_widget.dart';
-// import 'package:android_app/screen_btandroid2/image_view_menu.dart';
+import 'package:android_app/screen_btandroid2/call_screen.dart';
+import 'package:android_app/screen_btandroid2/comment_screen.dart';
+import 'package:android_app/screen_btandroid2/image_screen.dart';
+import 'package:android_app/screen_btandroid2/time_screen.dart';
 
 class BT_Android2 extends StatelessWidget {
   @override
@@ -20,7 +20,7 @@ class BT_Android2 extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => ImageView_Menu()),
+                  MaterialPageRoute(builder: (context) => ImageView()),
                 );
               },
               child: Text('Câu 1'),

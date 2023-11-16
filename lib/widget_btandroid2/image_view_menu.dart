@@ -3,11 +3,7 @@ import 'package:flutter/material.dart';
 class ImageView_Menu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Chào bạn đến câu 1 bài android 2'),
-      ),
-      body: Column(
+    return Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
@@ -27,8 +23,8 @@ class ImageView_Menu extends StatelessWidget {
             child: ButtonLayout(),
           ),
         ],
-      ),
-    );
+      );
+
   }
 }
 

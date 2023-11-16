@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class TimeDisplay extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

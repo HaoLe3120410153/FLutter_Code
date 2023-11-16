@@ -2,21 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter/services.dart'; // Để sử dụng TextInputFormatter
 
-void main() {
-  runApp(Phone_Call());
-}
-
-class Phone_Call extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-          title: Text('Nhập số điện thoại'),
-        ),
-        body: PhoneInputLayout(),
-      );
-  }
-}
 class PhoneInputLayout extends StatefulWidget {
   @override
   _PhoneInputLayoutState createState() => _PhoneInputLayoutState();
