@@ -4,6 +4,8 @@ import 'package:android_app/screen/btandroid3_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:android_app/screen/app_dat_mon_screen.dart';
+
 
 
 void main() {
@@ -14,6 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Localizations Sample App',
       localizationsDelegates: [
         AppLocalizations.delegate,
@@ -74,40 +77,13 @@ class HomeScreen extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => Screen4()),
+                  MaterialPageRoute(builder: (context) => FoodApp()),
                 );
               },
               child: Text('Phần mềm đặt món'),
             ),
           ],
         ),
-      ),
-    );
-  }
-}
-class Screen3 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Screen 3'),
-      ),
-      body: Center(
-        child: Text('This is Screen 3'),
-      ),
-    );
-  }
-}
-
-class Screen4 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Screen 4'),
-      ),
-      body: Center(
-        child: Text('This is Screen 4'),
       ),
     );
   }
