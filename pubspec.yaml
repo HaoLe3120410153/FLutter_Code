@@ -31,6 +31,8 @@ dependencies:
   flutter:
     sdk: flutter
   url_launcher: ^6.0.0
+  audioplayers: ^0.20.1
+  flutter_sequence_animation: ^4.0.0
   flutter_localizations:
     sdk: flutter
   intl: any
@@ -63,6 +65,7 @@ flutter:
   generate: true
   assets:
     - assets/image/
+    - res/drawable/
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
